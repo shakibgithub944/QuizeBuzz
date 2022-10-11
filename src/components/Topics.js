@@ -1,5 +1,6 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom'
+import {Link} from 'react-router-dom'
+
 
 const Topics = ({ topic }) => {
     return (
@@ -32,7 +33,9 @@ const Topics = ({ topic }) => {
                     Sed ut perspiciatis unde omnis iste natus error sit sed quia
                     consequuntur magni voluptatem doloremque.
                 </p>
+                <Link to={`/topic/${topic.id}`}>
                 <button type="button" className="px-8 py-3 bg-sky-600 text-white font-semibold border rounded">Start Practice</button>
+                </Link>
             </div>
         </div>
     );
