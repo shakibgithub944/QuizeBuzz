@@ -2,9 +2,8 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Main from './Main';
 import Home from './components/Home';
-import Topics from './components/Topics';
-import Statics from './components/Statics';
 import Quizes from './components/Quizes';
+import Statistics from './components/Statistics';
 
 function App() {
   const router = createBrowserRouter([
@@ -21,13 +20,12 @@ function App() {
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>
         },
-        // { path: 'Topics', element: <Topics></Topics> },
-        { path: 'Statics', element: <Statics></Statics> },
+        { path: 'Statistics', element: <Statistics></Statistics> },
         {
           path: '/topic/:topicId',
-          loader: async ({params}) => {
-             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`) 
-            },
+          loader: async ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
+          },
           element: <Quizes></Quizes>
         }
       ]

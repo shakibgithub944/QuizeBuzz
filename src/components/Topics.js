@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const Topics = ({ topic }) => {
@@ -34,7 +34,7 @@ const Topics = ({ topic }) => {
                     consequuntur magni voluptatem doloremque.
                 </p>
                 <Link to={`/topic/${topic.id}`}>
-                <button type="button" className="px-8 py-3 bg-sky-600 text-white font-semibold border rounded">Start Practice</button>
+                    <button type="button" className="px-8 py-3 bg-sky-600 text-white font-semibold border rounded">Start Practice</button>
                 </Link>
             </div>
         </div>
