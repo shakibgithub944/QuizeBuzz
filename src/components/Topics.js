@@ -30,8 +30,7 @@ const Topics = ({ topic }) => {
                     {topic.name}
                 </a>
                 <p className="mb-2 text-gray-700">
-                    Sed ut perspiciatis unde omnis iste natus error sit sed quia
-                    consequuntur magni voluptatem doloremque.
+                    The test is not official, it's just a nice way to see how much you know, or don't know, about CSS.
                 </p>
                 <Link to={`/topic/${topic.id}`}>
                     <button type="button" className="px-8 py-3 bg-sky-600 text-white font-semibold border rounded">Start Practice</button>
