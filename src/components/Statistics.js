@@ -41,7 +41,7 @@ const Statistics = () => {
         },
     ];
     return (
-        <div>
+        <div className=''>
             <BarChart
                 width={500}
                 height={300}
