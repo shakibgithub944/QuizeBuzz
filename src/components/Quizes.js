@@ -4,7 +4,7 @@ import ExamBoard from './ExamBoard';
 
 const Quizes = () => {
     const quizes = useLoaderData().data.questions;
-    console.log(quizes);
+    // console.log(quizes);
     return (
         <div>
             {
