@@ -24,9 +24,9 @@ const ExamBoard = ({ questions }) => {
             <div className='w-1/4'></div>
             <div className=' w-3/4 p-5 relative'>
                 <div className='absolute top-12 right-0'><EyeSlashIcon onClick={showAns} title='show answer' className='h-4 w-4'></EyeSlashIcon> </div>
-                
-                
-                <h1 className='font-bold text-2xl'>{question}</h1>
+
+
+                <h1 className='font-bold text-2xl'>Q: {question}?</h1>
                 <div className=''>
                     <div className=''>
                         {
